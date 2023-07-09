@@ -4,13 +4,14 @@ import json
 
 app = Flask(__name__)
 
-# Create a connection to the PostgreSQL database
-conn = psycopg2.connect(
-    host="localhost",
-    database="housing_db",
-    user="postgres",
-    password= "arnav")
+# Define the database connection details
+db_host = 'your_database_host'
+db_name = 'your_database_name'
+db_user = 'your_username'
+db_password = 'your_password'
 
+# Create a connection to the PostgreSQL database
+conn = psycopg2.connect(host=db_host, dbname=db_name, user=db_user, password=db_password)
 cur = conn.cursor()
 
 # Endpoint to store the JSON data in the PostgreSQL database
