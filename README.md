@@ -12,7 +12,7 @@ This project implements a REST API using Python and Flask to store and retrieve 
 1. Clone the repository:
 
     ```cmd
-    git clone https://github.com/your-username/housing-data-api.git
+    git clone https://github.com/your-username/housing-data.git
     ```
 
 2. Install the required dependencies:
